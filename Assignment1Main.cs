@@ -30,8 +30,8 @@ namespace SeleniumConcept
              string actualError=driver.FindElement(By.XPath("//span[contains(@id,'UserPhone')]")).Text;
             Console.WriteLine(actualError);
 
-            //SelectElement selectCountry = new SelectElement(driver.FindElement(By.Name("CompanyCountry")));
-            //selectCountry.SelectByText("United Kingdom");
+            SelectElement selectCountry = new SelectElement(driver.FindElement(By.Name("CompanyCountry")));
+            selectCountry.SelectByText("United Kingdom");
 
 
 
